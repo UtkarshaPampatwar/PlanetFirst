@@ -41,7 +41,6 @@ h4 {
 }
 
 
-
 /* equal card height */
 .row-equal > div[class*='col-'] {
     display: flex;
@@ -53,15 +52,15 @@ h4 {
 }
 
 /* ensure equal card height inside carousel */
-.carousel-inner>.row-equal.active,
-.carousel-inner>.row-equal.next,
-.carousel-inner>.row-equal.prev {
+.carousel-inner > .row-equal.active,
+.carousel-inner > .row-equal.next,
+.carousel-inner > .row-equal.prev {
     display: flex;
 }
 
 /* prevent flicker during transition */
-.carousel-inner>.row-equal.active.left,
-.carousel-inner>.row-equal.active.right {
+.carousel-inner > .row-equal.active.left,
+.carousel-inner > .row-equal.active.right {
     opacity: 0.5;
     display: flex;
 }
@@ -70,16 +69,26 @@ h4 {
 /* control image height */
 .card-img-top-250 {
     max-height: 250px;
-    overflow:hidden;
+    overflow: hidden;
+}
+
+#requestacallform > div:nth-child(5) > div > select {
+    font-size: 12px !important;
+}
+
+#bannerformmodal > div > div > div > div.modal-header > button {
+    margin: -1rem -1rem -1rem -1rem !important;
 }
 
 @media (max-width: 767.98px) {
     .display-1 {
         font-size: 3.3rem;
     }
+
     .display-2 {
         font-size: 2.5rem;
     }
+
     .display-3 {
         font-size: 2rem;
     }
